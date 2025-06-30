@@ -13,11 +13,14 @@ const TodayPatientsTypes: Array<TodayTypes> = [
     image: image1,
     note: "Programmer",
     time: "ongoing",
+    address:
+      "Line 4, Third Avenue, King's Court, Jabi, Airport Road, FCT, Abuja, Nigeria.",
+    zipCode: 113011,
     date: "19-02-2024",
-    dob: new Date("2024-02-19"),
+    dob: new Date("2024-02-19").toISOString(),
     height: "189",
     lastApoint: "2024-02-01",
-    registerDate: new Date("2024-02-01"),
+    registerDate: new Date("2024-02-01").toISOString(),
     weight: "75kg",
     sext: "Male",
     phoneNumber: 2349037273879,
@@ -27,11 +30,14 @@ const TodayPatientsTypes: Array<TodayTypes> = [
     image: image1,
     note: "Designer",
     time: new Date(),
+    address:
+      "Line 4, Third Avenue, King's Court, Jabi, Airport Road, FCT, Abuja, Nigeria.",
+    zipCode: 113011,
     date: "19-02-2024",
-    dob: new Date("2024-02-19"),
+    dob: new Date("2024-02-19").toISOString(),
     height: "189",
     lastApoint: "2024-02-01",
-    registerDate: new Date("2024-02-01"),
+    registerDate: new Date("2024-02-01").toISOString(),
     weight: "75kg",
     sext: "Male",
     phoneNumber: 2349037273879,
@@ -41,11 +47,14 @@ const TodayPatientsTypes: Array<TodayTypes> = [
     image: image1,
     note: "Dentist",
     time: "2:30 PM",
+    address:
+      "Line 4, Third Avenue, King's Court, Jabi, Airport Road, FCT, Abuja, Nigeria.",
+    zipCode: 113011,
     date: "19-02-2024",
-    dob: new Date("2024-02-19"),
+    dob: new Date("2024-02-19").toISOString(),
     height: "189",
     lastApoint: "2024-02-01",
-    registerDate: new Date("2024-02-01"),
+    registerDate: new Date("2024-02-01").toISOString(),
     weight: "75kg",
     sext: "Male",
     phoneNumber: 2349037273879,
@@ -55,11 +64,14 @@ const TodayPatientsTypes: Array<TodayTypes> = [
     image: image1,
     note: "Dentist",
     time: "2:30 PM",
+    address:
+      "Line 4, Third Avenue, King's Court, Jabi, Airport Road, FCT, Abuja, Nigeria.",
+    zipCode: 113011,
     date: "19-02-2024",
-    dob: new Date("2024-02-19"),
+    dob: new Date("2024-02-19").toISOString(),
     height: "189",
     lastApoint: "2024-02-01",
-    registerDate: new Date("2024-02-01"),
+    registerDate: new Date("2024-02-01").toISOString(),
     weight: "75kg",
     sext: "Male",
     phoneNumber: 2349037273879,
@@ -69,11 +81,14 @@ const TodayPatientsTypes: Array<TodayTypes> = [
     image: image1,
     note: "Dentist",
     time: "2:30 PM",
+    address:
+      "Line 4, Third Avenue, King's Court, Jabi, Airport Road, FCT, Abuja, Nigeria.",
+    zipCode: 113011,
     date: "19-02-2024",
-    dob: new Date("2024-02-19"),
+    dob: new Date("2024-02-19").toISOString(),
     height: "189",
     lastApoint: "2024-02-01",
-    registerDate: new Date("2024-02-01"),
+    registerDate: new Date("2024-02-01").toISOString(),
     weight: "75kg",
     sext: "Male",
     phoneNumber: 2349037273879,
@@ -83,11 +98,14 @@ const TodayPatientsTypes: Array<TodayTypes> = [
     image: image1,
     note: "Dentist",
     time: "2:30 PM",
+    address:
+      "Line 4, Third Avenue, King's Court, Jabi, Airport Road, FCT, Abuja, Nigeria.",
+    zipCode: 113011,
     date: "19-02-2024",
-    dob: new Date("2024-02-19"),
+    dob: new Date("2024-02-19").toISOString(),
     height: "189",
     lastApoint: "2024-02-01",
-    registerDate: new Date("2024-02-01"),
+    registerDate: new Date("2024-02-01").toISOString(),
     weight: "75kg",
     sext: "Male",
     phoneNumber: 2349037273879,
@@ -97,11 +115,14 @@ const TodayPatientsTypes: Array<TodayTypes> = [
     image: image1,
     note: "Dentist",
     time: "2:30 PM",
+    address:
+      "Line 4, Third Avenue, King's Court, Jabi, Airport Road, FCT, Abuja, Nigeria.",
+    zipCode: 113011,
     date: "19-02-2024",
-    dob: new Date("2024-02-19"),
+    dob: new Date("2024-02-19").toISOString(),
     height: "189",
     lastApoint: "2024-02-01",
-    registerDate: new Date("2024-02-01"),
+    registerDate: new Date("2024-02-01").toISOString(),
     weight: "75kg",
     sext: "Male",
     phoneNumber: 2349037273879,
@@ -111,11 +132,14 @@ const TodayPatientsTypes: Array<TodayTypes> = [
     image: image1,
     note: "Dentist",
     time: "2:30 PM",
+    address:
+      "Line 4, Third Avenue, King's Court, Jabi, Airport Road, FCT, Abuja, Nigeria.",
+    zipCode: 113011,
     date: "19-02-2024",
-    dob: new Date("2024-02-19"),
+    dob: new Date("2024-02-19").toISOString(),
     height: "189",
     lastApoint: "2024-02-01",
-    registerDate: new Date("2024-02-01"),
+    registerDate: new Date("2024-02-01").toISOString(),
     weight: "75kg",
     sext: "Male",
     phoneNumber: 2349037273879,
@@ -125,11 +149,14 @@ const TodayPatientsTypes: Array<TodayTypes> = [
     image: image1,
     note: "Dentist",
     time: "2:30 PM",
+    address:
+      "Line 4, Third Avenue, King's Court, Jabi, Airport Road, FCT, Abuja, Nigeria.",
+    zipCode: 113011,
     date: "19-02-2024",
-    dob: new Date("2024-02-19"),
+    dob: new Date("2024-02-19").toISOString(),
     height: "189",
     lastApoint: "2024-02-01",
-    registerDate: new Date("2024-02-01"),
+    registerDate: new Date("2024-02-01").toISOString(),
     weight: "75kg",
     sext: "Male",
     phoneNumber: 2349037273879,
@@ -181,20 +208,15 @@ const TodayPatients = ({ children }: Props) => {
       </div>
       <div className="flex-1">
         {selectedPatient ? (
-          <PatientsInfo patient={selectedPatient} />
+          <>
+            <div className="h-[350px] w-[100%] mt-4 bg-white px-4 py-2 rounded shadow">
+              <PatientsInfo patient={selectedPatient} />
+            </div>
+          </>
         ) : (
           <p>Select a patient to view details.</p>
         )}
       </div>
-      {/* <div className="h-[350px] w-[100%] mt-4 bg-white px-4 py-2 rounded shadow">
-        {children ? (
-          children(selectedPatient)
-        ) : (
-          <p className="text-md font-bold">
-            Selected patient information details
-          </p>
-        )}
-      </div> */}
     </div>
   );
 };

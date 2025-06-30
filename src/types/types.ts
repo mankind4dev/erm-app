@@ -12,11 +12,13 @@ export interface TodayTypes {
   name: string;
   note: string;
   time: Date | string;
+  address: string;
+  zipCode: number;
   date?: string;
-  dob?: Date
+  dob?: string;
   height?:string;
   lastApoint?: string
-  registerDate?: Date;
+  registerDate?: string;
   weight?: string;
   sext?: string;
   phoneNumber?: number;
