@@ -1,14 +1,11 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link } from "react-router-dom";
 
-type Props = {}
-
-const Home = (props: Props) => {
+const Home = () => {
   return (
     <div>
-        <Link to="/sme-dashboard">Dashboard</Link>
+      <Link to="/sme-dashboard">Dashboard</Link>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

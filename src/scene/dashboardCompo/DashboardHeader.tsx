@@ -1,11 +1,8 @@
-import React from "react";
 import { GoBell } from "react-icons/go";
 import { IoIosHelpCircleOutline } from "react-icons/io";
 import { CiSettings } from "react-icons/ci";
 
-type Props = {};
-
-const DashboardHeader = (props: Props) => {
+const DashboardHeader = () => {
   return (
     <>
       <div className="flex justify-between items-center my-1">
@@ -20,7 +17,7 @@ const DashboardHeader = (props: Props) => {
               <span className="absolute -top-1 -right-1 bg-gray-400 text-white text-xs font-bold rounded-full w-5 h-5 p-1 flex items-center justify-center shadow z-50">
                 3
               </span>
-            </div> 
+            </div>
             <p className="text-[15px]">Alert</p>
           </div>
           <div className="flex items-center space-x-1">

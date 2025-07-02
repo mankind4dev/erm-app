@@ -1,11 +1,5 @@
-import React from 'react'
+const Patients = () => {
+  return <div>Patients</div>;
+};
 
-type Props = {}
-
-const Patients = (props: Props) => {
-  return (
-    <div>Patients</div>
-  )
-}
-
-export default Patients
+export default Patients;

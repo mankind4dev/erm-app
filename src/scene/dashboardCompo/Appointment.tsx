@@ -3,8 +3,7 @@ import type { ApointmentTypes } from "../../types/types";
 import image1 from "/src/assets/doc.jpeg";
 import { FaRegTimesCircle } from "react-icons/fa";
 
-type Props = {};
-
+ 
 const ApointmentTypes: Array<ApointmentTypes> = [
   {
     name: "David Aregbe",
@@ -80,12 +79,14 @@ const ApointmentTypes: Array<ApointmentTypes> = [
   },
 ];
 
-const Appointment = (props: Props) => {
+const Appointment = () => {
   return (
     <>
       <div className="flex flex-col h-[250px] w-lg mt-8">
         <div className="h-full flex flex-col">
-          <h2 className="text-md font-semibold mb-[3px]">Appointment Requests</h2>
+          <h2 className="text-md font-semibold mb-[3px]">
+            Appointment Requests
+          </h2>
           <div className="flex flex-col gap-1 bg-slate-300 px-2 py-1 rounded-sm flex-grow overflow-auto">
             {ApointmentTypes.map((apoint, index) => (
               <div

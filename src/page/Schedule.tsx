@@ -1,11 +1,5 @@
-import React from 'react'
+const Schedule = () => {
+  return <div>Schedule</div>;
+};
 
-type Props = {}
-
-const Schedule = (props: Props) => {
-  return (
-    <div>Schedule</div>
-  )
-}
-
-export default Schedule
+export default Schedule;

@@ -1,11 +1,7 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import type { TodayTypes } from "../../types/types";
 import image1 from "/src/assets/doc.jpeg";
 import PatientsInfo from "./PatientsInfo";
-
-type Props = {
-  children?: (patient: TodayTypes | null) => React.ReactNode;
-};
 
 const TodayPatientsTypes: Array<TodayTypes> = [
   {
@@ -163,7 +159,7 @@ const TodayPatientsTypes: Array<TodayTypes> = [
   },
 ];
 
-const TodayPatients = ({ children }: Props) => {
+const TodayPatients = () => {
   const [selectedPatient, setSelectedPatient] = useState<TodayTypes | null>(
     TodayPatientsTypes.find((p) => p.time === "ongoing") ||
       TodayPatientsTypes[0]

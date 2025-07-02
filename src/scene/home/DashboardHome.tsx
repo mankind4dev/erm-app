@@ -6,9 +6,7 @@ import Medicines from "../../page/Medicines";
 import Dashboard from "../../page/Dashboard";
 import { useEffect, useState } from "react";
 
-type Props = {};
-
-const DashboardLayout = (props: Props) => {
+const DashboardLayout = () => {
   const [searchParams, setSearchParams] = useSearchParams();
   const [activeTab, setActiveTab] = useState("dashboard");
   const [tab, setTab] = useState<string>(() => {
@@ -16,7 +14,7 @@ const DashboardLayout = (props: Props) => {
   });
 
   const handleClick = (tabName: string) => {
-    setSearchParams({tab: tabName})
+    setSearchParams({ tab: tabName });
     setActiveTab(tabName);
     localStorage.setItem("activeTab", tabName);
     setTab(tabName);

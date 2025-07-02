@@ -1,12 +1,8 @@
-import React from "react";
-import { number, string } from "zod/v4-mini";
 import type { SubTypes } from "../../types/types";
 import { HiUsers } from "react-icons/hi";
 import { FaDollarSign, FaPlus } from "react-icons/fa";
 import { GiRoyalLove } from "react-icons/gi";
 import { CiCalendar } from "react-icons/ci";
-
-type Props = {};
 
 const subHeader: Array<SubTypes> = [
   {
@@ -35,7 +31,7 @@ const subHeader: Array<SubTypes> = [
   },
 ];
 
-const SubHeader = (props: Props) => {
+const SubHeader = () => {
   return (
     <div className="flex items-center justify-between w-full space-x-4">
       {subHeader.map((item, index) => (
@@ -59,7 +55,10 @@ const SubHeader = (props: Props) => {
           </div>
         </div>
       ))}
-      <button type="button" className="flex justify-between items-center w-lg h-full whitespace-nowrap px-2 py-6 space-x-2 rounded-sm bg-green-800 cursor-pointer">
+      <button
+        type="button"
+        className="flex justify-between items-center w-lg h-full whitespace-nowrap px-2 py-6 space-x-2 rounded-sm bg-green-800 cursor-pointer"
+      >
         <p className="text-lg">Add Patient</p>
         <FaPlus size={20} />
       </button>
