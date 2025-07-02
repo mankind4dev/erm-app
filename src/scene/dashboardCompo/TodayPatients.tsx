@@ -166,54 +166,63 @@ const TodayPatients = () => {
   );
 
   return (
-    <div className="flex space-x-3 h-[300px]">
+    <>
       <div className="">
-        <h2 className="text-xl font-bold mb-1">Today's Patients</h2>
-        <div className="flex flex-col space-y-1 bg-slate-300 p-2 rounded-sm w-lg h-full overflow-auto">
-          {TodayPatientsTypes.map((patient, index) => (
-            <div
-              key={index}
-              className={`flex items-center justify-between p-1 rounded-sm cursor-pointer hover:bg-slate-400 ${
-                selectedPatient?.name === patient.name ? "bg-slate-400" : ""
+        <h2 className="text-xl font-bold mb-2">Today's Patients</h2>
+        <div className="flex flex-col lg:flex-row gap-4 w-full">
+          <div className="lg:w-1/2 w-full">
+            <div className="bg-slate-200 rounded-md p-3 h-[350px] overflow-y-auto space-y-2">
+              {TodayPatientsTypes.map((patient, index) => (
+                <div
+                  key={index}
+                  onClick={() => setSelectedPatient(patient)}
+                  className={`flex justify-between items-center p-2 rounded-md cursor-pointer transition-all 
+              ${
+                selectedPatient?.name === patient.name
+                  ? "bg-slate-400 text-white"
+                  : "hover:bg-slate-300"
               }`}
-              onClick={() => setSelectedPatient(patient)}
-            >
-              <div className="flex items-center space-x-2">
-                <img
-                  src={patient.image}
-                  alt={patient.name}
-                  className="w-10 h-10 object-center rounded-full"
-                />
-                <div className="flex flex-col">
-                  <p className="text-[14px] font-semibold">{patient.name}</p>
-                  <p className="text-[12px]">{patient.note}</p>
+                >
+                  <div className="flex items-center gap-3">
+                    <img
+                      src={patient.image}
+                      alt={patient.name}
+                      className="w-10 h-10 object-cover rounded-full"
+                    />
+                    <div className="flex flex-col">
+                      <p className="text-sm font-semibold">{patient.name}</p>
+                      <p className="text-xs text-gray-600">{patient.note}</p>
+                    </div>
+                  </div>
+                  <p className="text-xs text-gray-700">
+                    {typeof patient.time === "string"
+                      ? patient.time
+                      : new Intl.DateTimeFormat("en-US", {
+                          hour: "numeric",
+                          minute: "numeric",
+                          hour12: true,
+                        }).format(new Date(patient.time))}
+                  </p>
                 </div>
-              </div>
-              <p className="text-sm">
-                {typeof patient.time === "string"
-                  ? patient.time
-                  : new Intl.DateTimeFormat("en-US", {
-                      hour: "numeric",
-                      minute: "numeric",
-                      hour12: true,
-                    }).format(new Date(patient.time))}
-              </p>
+              ))}
             </div>
-          ))}
+          </div>
+          <div className="lg:w-1/2 w-full">
+            {selectedPatient ? (
+              <div className="bg-white rounded-md shadow-md p-4 h-[350px] overflow-y-auto">
+                <PatientsInfo patient={selectedPatient} />
+              </div>
+            ) : (
+              <div className="bg-gray-100 rounded-md p-4 h-[350px] flex items-center justify-center">
+                <p className="text-sm text-gray-500">
+                  Select a patient to view details.
+                </p>
+              </div>
+            )}
+          </div>
         </div>
       </div>
-      <div className="flex-1">
-        {selectedPatient ? (
-          <>
-            <div className="h-[350px] w-[100%] mt-4 bg-white px-4 py-2 rounded shadow">
-              <PatientsInfo patient={selectedPatient} />
-            </div>
-          </>
-        ) : (
-          <p>Select a patient to view details.</p>
-        )}
-      </div>
-    </div>
+    </>
   );
 };
 

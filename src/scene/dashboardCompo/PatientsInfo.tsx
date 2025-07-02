@@ -1,5 +1,6 @@
 import { FaPhone } from "react-icons/fa";
 import type { TodayTypes } from "../../types/types";
+import { IoMdDocument } from "react-icons/io";
 
 const PatientsInfo = ({ patient }: { patient: TodayTypes }) => {
   return (
@@ -67,19 +68,16 @@ const PatientsInfo = ({ patient }: { patient: TodayTypes }) => {
           </tbody>
         </table>
 
-        <div className="  flex items-center space-x-4">
-          <div className="flex space-x-3 items-center p-2 rounded-lg  bg-slate-300">
+        <div className="flex items-center space-x-4">
+          <div className="flex space-x-3 items-center p-1 rounded-lg  bg-slate-300">
             <FaPhone className="rotate-90" />
             <p className="">{patient.phoneNumber}</p>
           </div>
-          <div className="flex space-x-3 items-center p-2 rounded-lg  bg-slate-300">
-            <FaPhone className="rotate-90" />
+          <div className="flex space-x-3 items-center p-1 rounded-lg  bg-slate-300">
+            <IoMdDocument className="rotate-90" />
             <p className="">{patient.phoneNumber}</p>
           </div>
-          <div className="flex space-x-3 items-center p-2 rounded-lg  bg-slate-300">
-            <FaPhone className="rotate-90" />
-            <p className="">{patient.phoneNumber}</p>
-          </div>
+           
         </div>
       </div> 
     </>

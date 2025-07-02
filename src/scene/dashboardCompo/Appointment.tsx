@@ -82,7 +82,7 @@ const ApointmentTypes: Array<ApointmentTypes> = [
 const Appointment = () => {
   return (
     <>
-      <div className="flex flex-col h-[250px] w-lg mt-8">
+      <div className="flex flex-col h-[250px] mt-8">
         <div className="h-full flex flex-col">
           <h2 className="text-md font-semibold mb-[3px]">
             Appointment Requests
