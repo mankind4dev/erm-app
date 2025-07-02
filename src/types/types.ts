@@ -16,8 +16,8 @@ export interface TodayTypes {
   zipCode: number;
   date?: string;
   dob?: string;
-  height?:string;
-  lastApoint?: string
+  height?: string;
+  lastApoint?: string;
   registerDate?: string;
   weight?: string;
   sext?: string;
@@ -42,4 +42,10 @@ export interface PatientsInfo {
   weight: string;
   sext: string;
   phoneNumber: Number;
+}
+
+export interface SidebarLink {
+  icon: ReactNode;
+  name: string;
+  link: string;
 }

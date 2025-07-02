@@ -13,18 +13,18 @@ const PatientsInfo = ({ patient }: { patient: TodayTypes }) => {
               className="object-center w-20 h-20 rounded-full"
             />
           </div>
-          <div className="flex flex-col ">
+          <div className="flex flex-col">
             <p className="text-md font-semibold">{patient.name}</p>
             <div className="flex space-x-1">
-              <span className="text-sm w-4/6">
+              <span className="text-sm w-4/6 text-[#282727]">
                 {patient.address} {patient.zipCode}
               </span>
               <span className="text-sm"></span>
             </div>
           </div>
         </div>
-        <table className="table-auto w-full my-4">
-          <thead className="bg-gray-100">
+        <table className="table-auto w-full my-2">
+          <thead className="">
             <tr>
               <th className="px-4 py-2 text-left">D.O.B</th>
               <th className="px-4 py-2 text-left">Sex</th>
@@ -45,7 +45,7 @@ const PatientsInfo = ({ patient }: { patient: TodayTypes }) => {
         </table>
 
         <table className="table-auto w-full my-1">
-          <thead className="bg-gray-100">
+          <thead className="">
             <tr>
               <th className="px-4 py-2 text-left">Height</th>
               <th className="px-4 py-2 text-left">Last Appointment</th>
@@ -67,27 +67,21 @@ const PatientsInfo = ({ patient }: { patient: TodayTypes }) => {
           </tbody>
         </table>
 
-        <div className="w-5/12 items-center space-x-2 p-2 bg-amber-300">
-          <div className="bg-amber-50">
-            <FaPhone className="" />
+        <div className="  flex items-center space-x-4">
+          <div className="flex space-x-3 items-center p-2 rounded-lg  bg-slate-300">
+            <FaPhone className="rotate-90" />
+            <p className="">{patient.phoneNumber}</p>
+          </div>
+          <div className="flex space-x-3 items-center p-2 rounded-lg  bg-slate-300">
+            <FaPhone className="rotate-90" />
+            <p className="">{patient.phoneNumber}</p>
+          </div>
+          <div className="flex space-x-3 items-center p-2 rounded-lg  bg-slate-300">
+            <FaPhone className="rotate-90" />
             <p className="">{patient.phoneNumber}</p>
           </div>
         </div>
-      </div>
-
-      {/* <div className="p-4 border rounded shadow-sm">
-      <img src={patient.image} alt={patient.name} className="w-32 h-32 rounded-full object-cover mb-4" />
-      <h2 className="text-xl font-bold">{patient.name}</h2>
-      <p><strong>Note:</strong> {patient.note}</p>
-      <p><strong>Sex:</strong> {patient.sext}</p>
-      <p><strong>Phone:</strong> {patient.phoneNumber}</p>
-      <p><strong>Height:</strong> {patient.height}</p>
-      <p><strong>Weight:</strong> {patient.weight}</p>
-      <p><strong>Date of Birth:</strong> {patient.dob?.toLocaleDateString()}</p>
-      <p><strong>Last Appointment:</strong> {patient.lastApoint}</p>
-      <p><strong>Registered:</strong> {patient.registerDate?.toLocaleDateString()}</p>
-      <p><strong>Time:</strong> {new Date(patient.time).toLocaleString()}</p>
-    </div> */}
+      </div> 
     </>
   );
 };
