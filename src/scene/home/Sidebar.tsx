@@ -1,7 +1,5 @@
-import { FaHamburger, FaPenAlt, FaUserAlt } from "react-icons/fa";
-import type { SidebarLink } from "../../types/types";
-import { useState } from "react";
-import useMediaQuery from "../../hooks/useMediaQuery";
+import { FaHamburger,  FaUserAlt } from "react-icons/fa";
+import type { SidebarLink } from "../../types/types"; 
 import { MdOutlineMessage, MdOutlineSpaceDashboard } from "react-icons/md";
 import { SlCalender } from "react-icons/sl";
 import { AiOutlineMedicineBox } from "react-icons/ai";
@@ -40,8 +38,8 @@ const sidebar: Array<SidebarLink> = [
 ];
 
 const Sidebar = ({ activeTab, onTabClick }: Props) => {
-  const [isMenuToggle, setIsMenuToggle] = useState<boolean>(false);
-  const smallSizeScreen = useMediaQuery("(max-width: 420px)");
+  // const [isMenuToggle, setIsMenuToggle] = useState<boolean>(false);
+  // const smallSizeScreen = useMediaQuery("(max-width: 420px)");
   return (
     <>
       <div className="flex "></div>
