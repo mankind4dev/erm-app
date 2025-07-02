@@ -1,6 +1,6 @@
 import type { SubTypes } from "../../types/types";
 import { HiUsers } from "react-icons/hi";
-import { FaDollarSign, FaPlus } from "react-icons/fa";
+import { FaDollarSign } from "react-icons/fa";
 import { GiRoyalLove } from "react-icons/gi";
 import { CiCalendar } from "react-icons/ci";
 

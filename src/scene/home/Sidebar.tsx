@@ -2,8 +2,7 @@ import { FaUserAlt } from "react-icons/fa";
 import type { SidebarLink } from "../../types/types";
 import { MdOutlineMessage, MdOutlineSpaceDashboard } from "react-icons/md";
 import { SlCalender } from "react-icons/sl";
-import { AiOutlineMedicineBox } from "react-icons/ai";
-import { useState } from "react";
+import { AiOutlineMedicineBox } from "react-icons/ai"; 
 import useMediaQuery from "../../hooks/useMediaQuery";
 import SmallDevice from "./SmallDevice";
 

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { FaHamburger } from "react-icons/fa";
 import type { SidebarLink } from "../../types/types";
 
