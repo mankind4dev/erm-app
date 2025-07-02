@@ -87,7 +87,7 @@ const Appointment = () => {
           <h2 className="text-md font-semibold mb-[3px]">
             Appointment Requests
           </h2>
-          <div className="flex flex-col gap-1 bg-slate-300 px-2 py-1 rounded-sm flex-grow overflow-auto">
+          <div className="flex flex-col gap-1 bg-slate-200 px-2 py-1 rounded-sm flex-grow overflow-auto">
             {ApointmentTypes.map((apoint, index) => (
               <div
                 key={index}

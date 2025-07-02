@@ -169,7 +169,7 @@ const TodayPatients = () => {
     <>
       <div className="">
         <h2 className="text-xl font-bold mb-2">Today's Patients</h2>
-        <div className="flex flex-col lg:flex-row gap-4 w-full">
+        <div className="flex flex-col lg:flex-row gap-2 w-full">
           <div className="lg:w-1/2 w-full">
             <div className="bg-slate-200 rounded-md p-3 h-[350px] overflow-y-auto space-y-2">
               {TodayPatientsTypes.map((patient, index) => (
@@ -180,7 +180,7 @@ const TodayPatients = () => {
               ${
                 selectedPatient?.name === patient.name
                   ? "bg-slate-400 text-white"
-                  : "hover:bg-slate-300"
+                  : "hover:bg-slate-400"
               }`}
                 >
                   <div className="flex items-center gap-3">
@@ -207,9 +207,9 @@ const TodayPatients = () => {
               ))}
             </div>
           </div>
-          <div className="lg:w-1/2 w-full">
+          <div className="hidden lg:flex lg:w-1/2 w-full">
             {selectedPatient ? (
-              <div className="bg-white rounded-md shadow-md p-4 h-[350px] overflow-y-auto">
+              <div className="bg-white rounded-md shadow-md p-4 h-[350px] overflow-y-auto border border-slate-300">
                 <PatientsInfo patient={selectedPatient} />
               </div>
             ) : (
