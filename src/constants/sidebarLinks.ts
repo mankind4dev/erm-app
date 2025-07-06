@@ -7,7 +7,7 @@ import type { IconType } from "react-icons";
 export interface SidebarLink {
   name: string;
   link: string;
-  icon: IconType; // store the component, not the JSX
+  icon: IconType;
 }
 
 export const sidebarLinks: SidebarLink[] = [
