@@ -26,7 +26,7 @@ const DashboardLayout = () => {
         <Sidebar activeTab={activeTab} onTabClick={handleTabClick} onClose={() => {}} />
       </div> 
       {isSmallScreen && isSidebarOpen && (
-        <div className="fixed top-0 left-0 z-40 h-screen bg-white shadow-md">
+        <div className="fixed top-0 left-0 z-40   bg-white shadow-md">
           <Sidebar
             activeTab={activeTab}
             onTabClick={handleTabClick}
@@ -34,7 +34,7 @@ const DashboardLayout = () => {
           />
         </div>
       )} 
-      <main className="w-full lg:ml-[130px]">
+      <main className="w-full lg:ml-[130px] overflow-scroll">
         <Outlet />
       </main>
     </div>
