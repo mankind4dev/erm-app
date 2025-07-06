@@ -40,7 +40,7 @@ const DashboardHeader = () => {
           <div className="flex space-x-3 md:space-x-8 items-center">
             <div className="relative flex items-center space-x-1">
               <GoBell className="md:w-8 w-4 h-4 md:h-8 text-gray-700" />
-              <span className="absolute -top-1 -right-1 bg-red-400 text-white text-[5px] md:text-xs font-bold rounded-full md:w-5 md:h-5 h-2 w-2 p-[2px] md:p-1 flex items-center justify-center shadow">
+              <span className="absolute -top-1 right-8 bg-red-400 text-white text-[5px] md:text-xs font-bold rounded-full md:w-5 md:h-5 h-2 w-2 p-[2px] md:p-1 flex items-center justify-center shadow">
                 3
               </span>
               <p className="hidden md:inline text-[15px]">Alert</p>
