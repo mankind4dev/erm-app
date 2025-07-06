@@ -7,12 +7,7 @@ import Dashboard from "./page/Dashboard";
 import MessagesPage from "./scene/messages/page";
 import SchedulePage from "./scene/schedule/page";
 import DashboardLayout from "./scene/home/DashboardLayout";
-import type { ReactNode } from "react";
 import MedicinePage from "./scene/medicines/page";
-
-type Props = {
-  children: ReactNode;
-};
 
 function App() {
   return (
