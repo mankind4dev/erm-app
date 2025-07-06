@@ -44,8 +44,8 @@ export interface PatientsInfo {
   phoneNumber: Number;
 }
 
-export interface SidebarLink {
-  icon: ReactNode;
+export type SidebarLink = {
   name: string;
   link: string;
-}
+  icon: React.ReactNode;
+};

@@ -6,18 +6,18 @@ const PatientsInfo = ({ patient }: { patient: TodayTypes }) => {
   return (
     <>
       <div className="flex flex-col space-y-4">
-        <div className="flex space-x-2">
+        <div className="flex space-x-2 w-full">
           <div className="rounded-full p-[2px] bg-gray-100">
             <img
               src={patient.image}
               alt={patient.name}
-              className="object-center w-20 h-20 rounded-full"
+              className="flex object-center w-20 h-20 rounded-full"
             />
           </div>
           <div className="flex flex-col">
             <p className="text-md font-semibold">{patient.name}</p>
             <div className="flex space-x-1">
-              <span className="text-sm w-4/6 text-[#282727]">
+              <span className="text-sm w-4/5 text-[#282727]">
                 {patient.address} {patient.zipCode}
               </span>
               <span className="text-sm"></span>

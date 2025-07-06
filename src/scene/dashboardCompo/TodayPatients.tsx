@@ -160,28 +160,39 @@ const TodayPatientsTypes: Array<TodayTypes> = [
 ];
 
 const TodayPatients = () => {
+  // const [selectedPatient, setSelectedPatient] = useState<TodayTypes | null>(
+  //   TodayPatientsTypes.find((p) => p.time === "ongoing") ||
+  //     TodayPatientsTypes[0]
+  // );
+
   const [selectedPatient, setSelectedPatient] = useState<TodayTypes | null>(
-    TodayPatientsTypes.find((p) => p.time === "ongoing") ||
-      TodayPatientsTypes[0]
+    TodayPatientsTypes.find((p) => p.time === "ongoing") || TodayPatientsTypes[0]
   );
+
+  const [showMobileModal, setShowMobileModal] = useState(false);
+
+  const handlePatientClick = (patient: TodayTypes) => {
+    setSelectedPatient(patient);
+    setShowMobileModal(true); 
+  };
 
   return (
     <>
-      <div className="">
+      <div>
         <h2 className="text-xl font-bold mb-2">Today's Patients</h2>
-        <div className="flex flex-col lg:flex-row gap-2 w-full">
+        <div className="flex flex-col lg:flex-row gap-2 w-full"> 
           <div className="lg:w-1/2 w-full">
             <div className="bg-slate-200 rounded-md p-3 h-[350px] overflow-y-auto space-y-2">
               {TodayPatientsTypes.map((patient, index) => (
                 <div
                   key={index}
-                  onClick={() => setSelectedPatient(patient)}
+                  onClick={() => handlePatientClick(patient)}
                   className={`flex justify-between items-center p-2 rounded-md cursor-pointer transition-all 
-              ${
-                selectedPatient?.name === patient.name
-                  ? "bg-slate-400 text-white"
-                  : "hover:bg-slate-400"
-              }`}
+                    ${
+                      selectedPatient?.name === patient.name
+                        ? "bg-slate-400 text-white"
+                        : "hover:bg-slate-400"
+                    }`}
                 >
                   <div className="flex items-center gap-3">
                     <img
@@ -206,7 +217,7 @@ const TodayPatients = () => {
                 </div>
               ))}
             </div>
-          </div>
+          </div> 
           <div className="hidden lg:flex lg:w-1/2 w-full">
             {selectedPatient ? (
               <div className="bg-white rounded-md shadow-md p-4 h-[350px] overflow-y-auto border border-slate-300">
@@ -221,7 +232,20 @@ const TodayPatients = () => {
             )}
           </div>
         </div>
-      </div>
+      </div> 
+      {showMobileModal && selectedPatient && (
+        <div className="fixed inset-0 z-50 bg-[#0000003f] bg-opacity-40 flex items-center justify-center lg:hidden">
+          <div className="bg-white rounded-lg w-[90%] max-h-[90vh] overflow-y-auto p-4 relative">
+            <button
+              onClick={() => setShowMobileModal(false)}
+              className="absolute top-2 right-2 text-gray-600 hover:text-black text-xl font-bold"
+            >
+              &times;
+            </button>
+            <PatientsInfo patient={selectedPatient} />
+          </div>
+        </div>
+      )}
     </>
   );
 };
